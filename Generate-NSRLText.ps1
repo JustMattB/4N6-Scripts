@@ -3,10 +3,10 @@
 
 [CmdletBinding()]
 param(
-    [string]$DbDir  = "D:\GAD\RDS_2025.03.1_ios\RDS_2025.03.1_ios",
+    [string]$DbDir  = "D:\RDS_2025.03.1_ios\RDS_2025.03.1_ios",
     [string]$DbFile = "RDS_2025.03.1_ios.db",
-    [string]$OutDir = "D:\GAD\CNSRL_Output",
-    [string]$Sqlite3 = "D:\GAD\sqlite-tools-win-x64-3500400\sqlite3.exe"
+    [string]$OutDir = "D:\CNSRL_Output",
+    [string]$Sqlite3 = "D:\sqlite-tools-win-x64-3500400\sqlite3.exe"
 )
 
 Write-Host "🚀 Processing NIST NSRL DB to text..." -ForegroundColor green
@@ -228,5 +228,6 @@ Write-Host "✅ NIST NSRL extraction completed." -ForegroundColor green -Backgro
 Write-Host "Full file:    $nsrlFileOut" -ForegroundColor yellow
 Write-Host "MD5-only:     $md5OnlyFile" -ForegroundColor yellow
 Write-Host "Have a nice day" -ForegroundColor green
+
 
 
